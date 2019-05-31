@@ -17,6 +17,6 @@ interface GitHubDAO {
     fun getAllRepos():LiveData<List<GitHubRepo>>
 
     @Query("DELETE FROM repos")
-    suspend fun nukeTable()
+    suspend fun deleteTable()
 
 }
